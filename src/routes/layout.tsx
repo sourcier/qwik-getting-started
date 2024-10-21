@@ -13,5 +13,9 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 };
 
 export default component$(() => {
-  return <Slot />;
+  return (
+    <div class="mt-8 md:container md:mx-auto">
+      <Slot />
+    </div>
+  );
 });
